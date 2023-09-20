@@ -1,0 +1,30 @@
+.Footer {
+    background-color: #100821;
+    color: white;
+    padding-bottom: 100px;
+}
+
+.footer--links {
+    margin: 10px 20px;
+}
+
+.footer--left-side {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    float: left;
+}
+.footer--right-side {
+   position: relative;
+    float: right;
+    right: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer--right-side > a {
+    text-decoration: none;
+    color: white;
+}

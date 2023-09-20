@@ -5,7 +5,9 @@ import "./App.css";
 import { FiSearch } from "react-icons/fi";
 import Lawyerinfo from "../Components/Lawyerinfo";
 import { FaPenToSquare, FaShieldHalved } from "react-icons/fa6";
-import {LiaUserClockSolid} from "react-icons/lia"
+import { LiaUserClockSolid } from "react-icons/lia";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 const providers = [
   " Advocates",
@@ -13,7 +15,7 @@ const providers = [
   " Mediators",
   " Arbitrators",
   " Legal Consultants",
-]
+];
 
 function App() {
   useEffect(() => {
@@ -36,19 +38,9 @@ function App() {
 
   return (
     <div className="main-container">
-      <nav className="navbar">
-        <div className="container-fluid">
-          <h1 className="navbar-brand">Legalix</h1>
-          <div className="right-side">
-            <a className="nav-link">Learn</a>
-            <a className="nav-link">About</a>
-            <a className="nav-link">My Profile</a>
-            <a className="nav-link">Login</a>
-
-            <a className="btn btn-primary">Signup</a>
-          </div>
-        </div>
-      </nav>
+      <div className="top-section">
+        <Navbar />
+      </div>
       <div className="section-1 section">
         <div className="left-container">
           <h1 className="slogan">
@@ -166,17 +158,17 @@ function App() {
           <h1 className="heading feature--heading">
             Elevate Your Legal Experience, Effortlessly
           </h1>
-          <FaPenToSquare className="feature--icon"/>
+          <FaPenToSquare className="feature--icon" />
           <h2 className="feature--subheading">No cost to join</h2>
           <p className="feature--paragraph">
             Committed to Universal Access to Quality Legal Services.
           </p>
-          <FaShieldHalved className="feature--icon"/>
+          <FaShieldHalved className="feature--icon" />
           <h2 className="feature--subheading">Transparent and Reliable</h2>
           <p className="feature--paragraph">
             Rest assured with a transparent rating and review system.
           </p>
-          <LiaUserClockSolid className="feature--icon"/>
+          <LiaUserClockSolid className="feature--icon" />
           <h2 className="feature--subheading">Expertise Meets Convenience</h2>
           <p className="feature--paragraph">
             Effortlessly access legal expertise, anytime, anywhere.
@@ -187,8 +179,47 @@ function App() {
       </div>
 
       <div className="section section-5">
-        
+        <h1 className="heading">Popular IPC Sections</h1>
+        <div className="grid-container--2">
+          <div className="learn--card">
+            <h1 className="learn--heading">
+              209-Dishonestly making false claim in Court
+            </h1>
+            <p className="learn--content">
+              According to section 209 of Indian penal code, Whoever
+              fraudulently or dishonestly, or with intent to injure or annoy any
+              person, makes in a Court of Justice any claim which he knows to be
+              false, shall be punished with imprisonment of either description
+              for a term which may extend to two years, and shall also be liable
+              to fine.
+            </p>
+          </div>
+          <div className="learn--card">
+            <h1 className="learn--heading">
+              209-Dishonestly making false claim in Court
+            </h1>
+            <p className="learn--content">
+              According to section 209 of Indian penal code, Whoever
+              fraudulently or dishonestly, or with intent to injure or annoy any
+              person, makes in a Court of Justice any claim which he knows to be
+              false, shall be punished with imprisonment of either description
+              for a term which may extend to two years, and shall also be liable
+              to fine.
+            </p>
+          </div>
+          <div className="learn--card">
+            <h1 className="learn--heading">192-Fabricating false evidence</h1>
+            <p className="learn--content">
+              Section 192 of the Indian Penal Code defines "fabricating false
+              evidence" as causing false information to be present in a record
+              or document with the intention that it may be used in a judicial
+              or legal proceeding, leading to a wrong conclusion.
+            </p>
+          </div>
+        </div>
+        <a className="btn btn-white learn-btn">Learn more</a>
       </div>
+      <Footer />
     </div>
   );
 }
