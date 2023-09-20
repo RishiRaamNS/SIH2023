@@ -1,0 +1,61 @@
+.Lawyerinfo {
+    text-align: center;
+    border: 1px solid gray;
+    padding: 30px 10px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    max-height: max-content;
+    overflow: hidden;
+}
+
+.Lawyerinfo--image {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.Lawyerinfo--name {
+    font-size: 26px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.Lawyerinfo--profession {
+    font-size: 16px;
+}
+
+.Lawyerinfo--rating {
+    color: gray;
+    font-size: 14px;
+}
+
+.Lawyerinfo--fieldchips {
+    background-color: #EBEEFF;
+    border-radius: 25px;
+    color: black;
+    padding: 7px 10px;
+    max-width: fit-content;
+    margin: 7px 10px;
+    cursor: pointer;
+    transition: all .2s;
+    display: inline-block;
+}
+
+.Lawyerinfo--fieldchips:active {
+    transform: scale(0.7);
+}
+
+.lastchip {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Lawyerinfo > a {
+    text-decoration: none;
+}
+
+.Lawyerinfo--seemore {
+    margin: 30px;
+    margin-bottom: 10px;
+}

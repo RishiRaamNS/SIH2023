@@ -1,0 +1,128 @@
+.Container {
+  background-color: white;
+  width: 25%;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px 30px 10px;
+  box-shadow: 0.9px 2.5px 4.1px rgba(0, 0, 0, 0.02),
+    2.1px 6px 9.8px rgba(0, 0, 0, 0.028), 4px 11.3px 18.4px rgba(0, 0, 0, 0.035),
+    7.1px 20.1px 32.8px rgba(0, 0, 0, 0.042),
+    13.4px 37.6px 61.4px rgba(0, 0, 0, 0.05),
+    32px 90px 147px rgba(0, 0, 0, 0.07);
+}
+
+.heading {
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+.signin-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.brand {
+  border: 1px solid gray;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0px 0.25rem;
+  border-radius: 6px;
+}
+
+.input {
+  padding: 15px 30% 10px 30%;
+  padding-left: 5px;
+  margin-top: 10px;
+  border: none;
+  transition: all 1s;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.input:active {
+  transform: scale(1.5);
+  border: none;
+  outline: none;
+}
+
+.first-input {
+  margin-top: 30px;
+}
+
+input::placeholder {
+  text-align: left;
+  margin-left: 5px;
+  color: black;
+  font-weight: 500;
+}
+
+.btn {
+  padding: 13px 80px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: #3282b8;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 10px;
+  color: white;
+}
+
+.btn:hover,
+.brand:hover {
+  cursor: pointer;
+}
+
+.brand:hover, .brand:active {
+    background-color: black;
+    color: white;
+}
+
+.brand-icon {
+  width: 15px;
+  height: 15px;
+  margin: 2px 7px;
+}
+
+/* Utility Classes */
+
+.center {
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.left-align {
+  text-align: left;
+  width: 80%;
+  font-size: 0.75rem;
+}
+
+.para {
+  font-size: 0.9rem;
+}
+
+.mediumtxt {
+  font-size: 0.8rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 720px) {
+  .Container {
+    width: 40%;
+  }
+}
+
