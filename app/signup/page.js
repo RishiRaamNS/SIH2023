@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../Components/Container";
-import "./Signup.css";
-import Login from "./Login";
+import "../styles/Signup.css";
+import Login from "../login/page";
 import ReactDOM from "react-dom";
 
 function Signup() {
@@ -23,9 +23,7 @@ function Signup() {
             <path d="M36 63a1 1 0 0 1-1-1V10a1 1 0 0 1 2 0v52a1 1 0 0 1-1 1Z"></path>
           </g>
         </svg>
-        <button className="login-btn">
-          Login
-        </button>
+        <button className="login-btn">Login</button>
       </div>
       <Container heading={"Signup"} btn={"Create account"} name={"sign up"} />
     </div>

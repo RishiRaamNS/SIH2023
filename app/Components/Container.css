@@ -67,7 +67,7 @@ input::placeholder {
   font-weight: 500;
 }
 
-.btn {
+.container--btn {
   padding: 13px 80px;
   margin-top: 25px;
   margin-bottom: 15px;
@@ -79,14 +79,15 @@ input::placeholder {
   color: white;
 }
 
-.btn:hover,
+.container--btn:hover,
 .brand:hover {
   cursor: pointer;
 }
 
-.brand:hover, .brand:active {
-    background-color: black;
-    color: white;
+.brand:hover,
+.brand:active {
+  background-color: black;
+  color: white;
 }
 
 .brand-icon {
@@ -125,4 +126,3 @@ input::placeholder {
     width: 40%;
   }
 }
-

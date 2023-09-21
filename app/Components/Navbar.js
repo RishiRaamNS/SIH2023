@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from "next/link"
 
 function Navbar() {
   return (
@@ -9,9 +10,8 @@ function Navbar() {
           <a className="nav-link">Learn</a>
           <a className="nav-link">About</a>
           <a className="nav-link">My Profile</a>
-          <a className="nav-link">Login</a>
-
-          <a className="btn btn-primary">Signup</a>
+          <Link href="/login" className="nav-link">Login</Link>
+          <Link href="/signup" className="btn btn-primary btn-blue">Signup</Link>
         </div>
       </div>
     </nav>

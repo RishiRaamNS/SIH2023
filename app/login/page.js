@@ -1,13 +1,16 @@
-import "./Login.css";
+import "../styles/Login.css";
 import Container from "../Components/Container";
 import ReactDOM from "react-dom";
 import React from "react";
-import Signup from "./Signup";
+import Signup from "../signup/page";
+import Link from "next/link";
 
 export default function Login() {
   return (
     <div className="Login">
-      <h1 className="brand-name">Legalix</h1>
+      <Link href="/" className="brand-name">
+        Legalix
+      </Link>
       <div className="right-align">
         <svg
           className="icon"
@@ -23,9 +26,7 @@ export default function Login() {
             <path d="M36 63a1 1 0 0 1-1-1V10a1 1 0 0 1 2 0v52a1 1 0 0 1-1 1Z"></path>
           </g>
         </svg>
-        <button className="signup-btn" >
-          Signup
-        </button>
+        <button className="signup-btn">Signup</button>
       </div>
       <Container heading={"Login"} btn="Log In" name={"log in"} />
     </div>

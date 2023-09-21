@@ -1,13 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+import "../app/styles/App.css";
 import { FiSearch } from "react-icons/fi";
-import Lawyerinfo from "../Components/Lawyerinfo";
+import Lawyerinfo from "./Components/Lawyerinfo";
 import { FaPenToSquare, FaShieldHalved } from "react-icons/fa6";
 import { LiaUserClockSolid } from "react-icons/lia";
-import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
 const providers = [
   " Advocates",
