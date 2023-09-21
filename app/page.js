@@ -11,6 +11,7 @@ import Footer from "./Components/Footer";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 
+//hello
 const inter = Inter({ subsets: ["latin"] });
 const providers = [
   " Advocates",
@@ -52,7 +53,9 @@ function App() {
           <p className="sub-heading">
             Your gateway to a simplified and efficient legal experience.
           </p>
-          <Link href="/signup" className="btn btn-primary get-started">Get started</Link>
+          <Link href="/signup" className="btn btn-primary get-started">
+            Get started
+          </Link>
         </div>
 
         <div className="right-container">
