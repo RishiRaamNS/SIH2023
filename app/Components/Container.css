@@ -1,24 +1,23 @@
 .Container {
   background-color: white;
-  width: 25%;
-  border-radius: 20px;
+  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px 10px 30px 10px;
-  box-shadow: 0.9px 2.5px 4.1px rgba(0, 0, 0, 0.02),
-    2.1px 6px 9.8px rgba(0, 0, 0, 0.028), 4px 11.3px 18.4px rgba(0, 0, 0, 0.035),
-    7.1px 20.1px 32.8px rgba(0, 0, 0, 0.042),
-    13.4px 37.6px 61.4px rgba(0, 0, 0, 0.05),
-    32px 90px 147px rgba(0, 0, 0, 0.07);
+  padding: 30px 10px;
+  padding-top: 0;
+  height: 100vh;
+  padding-bottom: 0;
 }
 
-.heading {
+.container--heading {
   margin-bottom: 0;
   font-size: 2rem;
+  margin-top: 0;
 }
+
 .signin-options {
   display: flex;
   flex-direction: row;
@@ -36,10 +35,12 @@
   justify-content: center;
   font-size: 12px;
   font-weight: 500;
-  padding: 0px 0.25rem;
+  padding: 0px 0.7rem;
   border-radius: 6px;
 }
-
+.input-wrapper {
+  position: absolute;
+}
 .input {
   padding: 15px 30% 10px 30%;
   padding-left: 5px;
@@ -48,35 +49,120 @@
   transition: all 1s;
   outline: none;
   border-bottom: 1px solid black;
+  box-shadow: none !important;
 }
 
-.input:active {
-  transform: scale(1.5);
-  border: none;
-  outline: none;
+.floating-label-1 {
+  font-size: 15px;
+  color: black;
+  position: relative;
+  pointer-events: none;
+  top: -50px;
+  right: 130px;
+  transition: all 0.1s ease;
 }
+.floating-label-2 {
+  font-size: 15px;
+  color: black;
+  position: relative;
+  pointer-events: none;
+  top: -30px;
+  right: 130px;
+  transition: all 0.1s ease;
+}
+
+
+.first-input:active ~ .floating-label-1, .first-input:focus ~ .floating-label-1
+ {
+  top: -70px;
+  right: 148px;
+  opacity: 1;
+  color: #404040;
+  font-size: 13px;
+}
+
+.second-input:active ~ .floating-label-2, .second-input:focus ~ .floating-label-2
+{
+top: -50px;
+  right: 135px;
+  opacity: 1;
+  color: #404040;
+  font-size: 13px;}
+
+
+.floating-label-1 {
+  right: 140px;
+}
+
+
 
 .first-input {
-  margin-top: 30px;
+  
+  margin-bottom: 10px;
 }
 
-input::placeholder {
-  text-align: left;
-  margin-left: 5px;
-  color: black;
-  font-weight: 500;
-}
 
 .container--btn {
-  padding: 13px 80px;
-  margin-top: 25px;
+  padding: 10px 100px;
+  margin-top: 60px;
   margin-bottom: 15px;
-  border: none;
-  background-color: #3282b8;
   font-weight: 700;
   font-size: 16px;
-  border-radius: 10px;
+  border-radius: 30px;
   color: white;
+  background-color: #6c63ff;
+  margin-left: 0;
+  transition: all 0.5s;
+}
+
+.container--footer-text, .container--footer-link {
+  font-size: 14px;
+  margin: 0;
+  margin-top: 120px;
+}
+
+.container--footer-link {
+  font-weight: 700;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.container--footer-link:hover {
+  border-bottom: 1px solid black;
+}
+
+.container--footer-link:active {
+  opacity: 40%;
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: row;
+justify-content: center;
+background-color: #f4f2f5;
+  padding: 10px 30px;
+  border-radius: 30px;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.btn-wrapper:active, .container--btn:active {
+  transform: scale(0.9);
+  opacity: 70%;
+}
+.container--btn-2 {
+  
+  margin: 0;
+  text-align: center;
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
 
 .container--btn:hover,
@@ -86,8 +172,7 @@ input::placeholder {
 
 .brand:hover,
 .brand:active {
-  background-color: black;
-  color: white;
+  background-color: aliceblue;
 }
 
 .brand-icon {
@@ -98,21 +183,17 @@ input::placeholder {
 
 /* Utility Classes */
 
-.center {
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-}
-
 .left-align {
-  text-align: left;
-  width: 80%;
+  text-align: right;
+  width: 60%;
   font-size: 0.75rem;
+  margin-top: 0px;
+  color: gray;
 }
 
 .para {
   font-size: 0.9rem;
+  margin-bottom: 60px;
 }
 
 .mediumtxt {
