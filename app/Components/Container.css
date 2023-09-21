@@ -13,9 +13,10 @@
 }
 
 .container--heading {
-  margin-bottom: 0;
-  font-size: 2rem;
-  margin-top: 0;
+  margin-bottom: 0px;
+  font-size: 28px;
+  margin-top: 100px;
+  font-weight: 700;
 }
 
 .signin-options {
@@ -192,7 +193,7 @@ background-color: #f4f2f5;
 }
 
 .para {
-  font-size: 0.9rem;
+  font-size: 14px;
   margin-bottom: 60px;
 }
 

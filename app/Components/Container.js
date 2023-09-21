@@ -1,4 +1,5 @@
 import "./Container.css";
+import Link from "next/link"
 
 export default function Container({ heading, btn }) {
   return (
@@ -11,10 +12,10 @@ export default function Container({ heading, btn }) {
       <span class="floating-label floating-label-2">Password</span>
 
       <p className="left-align">Have trouble sigining in?</p>
-      <a className="btn btn-primary container--btn">{btn}</a>
+      <Link href="/" className="btn btn-primary container--btn">{btn}</Link>
       <div className="btn-wrapper">
         <img src="/google.svg" className="google-icon" />
-        <a className="btn container--btn-2">Continue with google</a>
+        <Link href="/" className="btn container--btn-2">Continue with google</Link>
           </div>
           <p className="container--footer-text">Don't have an account?<a className="container--footer-link">Signup</a></p>
     </div>
