@@ -149,10 +149,10 @@ function App() {
       <div className="section-3 section">
         <h1 className="heading">Top rated Advocates in India</h1>
         <div className="grid-container">
-          <Lawyerinfo />
-          <Lawyerinfo />
-          <Lawyerinfo />
-          <Lawyerinfo />
+          <Lawyerinfo name="Rishi Raam" star="4.6" exp="14"/>
+          <Lawyerinfo name="Thilakarajan" star="4.1" exp="10"/>
+          <Lawyerinfo name="Ram Prathap" star="4.4" exp="8"/>
+          <Lawyerinfo name="Sharmila" star="3.9" exp="12"/>
         </div>
       </div>
 
