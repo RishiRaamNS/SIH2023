@@ -13,7 +13,7 @@ LegalPulse is an innovative online platform designed to bridge the gap between i
 **Review and Feedback**: After the service is provided, clients can leave reviews and ratings, contributing to a transparent community.
 ## Installation
 To run LegalPulse locally, follow these steps:
-- Clone the repository: git clone [repository URL]
+- Clone the repository: git clone www.github.com/RishiRaamNS/LegalPulse
 - Navigate to the project directory: cd LegalPulse
 - Install dependencies: npm install
 - Start the server: npm start
@@ -29,4 +29,4 @@ Contributions are welcome! Please fork the repository and create a pull request 
 This project is licensed under the [Your License] - see the LICENSE file for details.
 
 ## Acknowledgements
-Special thanks to the team members and contributors who made this project possible.
+Special thanks to the team members of my team **CodeFellas** and contributors who made this project possible.
