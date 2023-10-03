@@ -12,7 +12,7 @@ function Signup() {
           <img src="/login.svg" className="login--hero-img" />
         </div>
         <div className="login--right-container">
-          <Container heading={"Signup"} btn="Sign up" />
+          <Container heading={"Signup"} btn="Sign up" link={"/details"}/>
         </div>
       </div>
     </div>

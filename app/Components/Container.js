@@ -1,7 +1,7 @@
 import "./Container.css";
 import Link from "next/link"
 
-export default function Container({ heading, btn }) {
+export default function Container({ heading, btn, link }) {
   return (
     <div className="Container login--right-container">
       <h1 className="container--heading">{heading}</h1>
@@ -10,9 +10,8 @@ export default function Container({ heading, btn }) {
       <span class="floating-label floating-label-1">Email</span>
       <input type="password" className="input second-input"></input>
       <span class="floating-label floating-label-2">Password</span>
-
       <p className="left-align">Have trouble sigining in?</p>
-      <Link href="/" className="btn btn-primary container--btn">{btn}</Link>
+      <Link href={link} className="btn btn-primary container--btn">{btn}</Link>
       <div className="btn-wrapper">
         <img src="/google.svg" className="google-icon" />
         <Link href="/" className="btn container--btn-2">Continue with google</Link>

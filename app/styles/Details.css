@@ -1,0 +1,21 @@
+.details {
+  background-color: #eae9eb;
+  height: 100vh;
+}
+
+.details--container {
+    background-color: #fff;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: 28%;
+    text-align: center;
+    padding: 40px;
+}
+
+.details--input {
+    margin: 10px auto;
+    width: 50%;
+}
