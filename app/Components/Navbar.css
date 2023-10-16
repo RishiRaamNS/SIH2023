@@ -6,3 +6,7 @@
     margin-bottom: 0;
     font-size: 36px;
 }
+
+.nav-link {
+  cursor: pointer;
+}

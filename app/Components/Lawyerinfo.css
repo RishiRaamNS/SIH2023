@@ -1,13 +1,19 @@
 .Lawyerinfo {
     text-align: center;
-    border: 1px solid gray;
+background-color: #FDFFFC;
     padding: 30px 10px;
     margin: 10px 20px;
     border-radius: 10px;
+    border: 1px solid gray;
     max-height: max-content;
     overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
+.Lawyerinfo:hover{
+    transform: scale(1.05);
+}
 .Lawyerinfo--image {
     width: 30px;
     height: 30px;
@@ -32,7 +38,7 @@
 .Lawyerinfo--fieldchips {
     background-color: #EBEEFF;
     border-radius: 25px;
-    color: black;
+    color: black; 
     padding: 7px 10px;
     max-width: fit-content;
     margin: 7px 10px;
